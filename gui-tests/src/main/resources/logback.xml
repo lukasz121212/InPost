@@ -1,0 +1,25 @@
+<configuration>
+    <!-- Console config -->
+    <appender name="COLORED_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss} [%thread]
+                %highlight(%-5level) %cyan(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Log file config -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/test.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--    Default logging level is INFO. Please change to DEBUG for detailed logs-->
+    <root level="INFO">
+        <appender-ref ref="COLORED_CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
