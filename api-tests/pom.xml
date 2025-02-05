@@ -58,18 +58,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
-        <resources>
-            <resource>
-                <directory>../src/main/java/pl/inpost/utils</directory>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
-                <directory>../src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+        <finalName>api-tests</finalName>
     </build>
-
 </project>

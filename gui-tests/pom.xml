@@ -43,18 +43,7 @@
             <artifactId>assertj-core</artifactId>
         </dependency>
     </dependencies>
-
     <build>
-        <resources>
-            <resource>
-                <directory>../src/main/java/pl/inpost/utils</directory>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
-                <directory>../src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+        <finalName>gui-tests</finalName>
     </build>
-
 </project>
